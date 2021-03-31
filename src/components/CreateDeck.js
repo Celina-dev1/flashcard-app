@@ -1,4 +1,3 @@
-//import { create } from "json-server";
 import React, {Fragment, useState} from "react";
 import { useHistory, Link } from "react-router-dom";
 import {createDeck} from "../utils/api/index";

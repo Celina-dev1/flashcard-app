@@ -23,8 +23,6 @@ function StudyDeck() {
         loadCurrentDeck();
     }, [deckId]);
 
-    //const currentDeck = decks.find(deck => deck.id == deckId);
-
     function flip() {
         setShowFront(current => !current);
     }

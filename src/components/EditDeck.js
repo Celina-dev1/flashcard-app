@@ -1,6 +1,6 @@
 import React, {Fragment, useState, useEffect} from "react";
 import { useHistory, Link, useParams } from "react-router-dom";
-import {updateDeck, readDeck, listDecks} from "../utils/api/index";
+import {updateDeck, readDeck} from "../utils/api/index";
 
 function EditDeck() {
     

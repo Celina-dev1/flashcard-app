@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useHistory} from "react-router-dom";
 import {deleteDeck, listDecks} from "../utils/api/index";
-//import Deck from "./Deck";
 
 function DeckList() {
     const history = useHistory();
