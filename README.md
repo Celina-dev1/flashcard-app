@@ -2,7 +2,6 @@
 
 This flashcard app is meant for teachers and students to help them quickly and easily create and study decks of flashcards.  
 
-___
 
 ## Screenshots
 
@@ -31,7 +30,6 @@ Displays the message 'not enough cards' when there are less than three cards in 
 
 ![study deck page](/screenshots/NotEnough.png)
 
-___
 
 ## Technology
 
