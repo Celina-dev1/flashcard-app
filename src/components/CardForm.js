@@ -23,11 +23,11 @@ function CardForm({handleCardUpdate, updatedFront, setUpdatedFront, updatedBack,
                 ></textarea>
                 
                 <button 
-                className="btn btn-secondary"
+                className="btn btn-secondary mr-2 mt-2"
                 onClick={() => history.push(`/decks/${deckId}`)}
                 >Cancel</button>
                 <button 
-                className="btn btn-primary" 
+                className="btn btn-primary mx-2 mt-2" 
                 type="submit">
                     Submit
                 </button>
@@ -51,11 +51,11 @@ function CardForm({handleCardUpdate, updatedFront, setUpdatedFront, updatedBack,
                 ></textarea>
                 
                 <button 
-                className="btn btn-secondary"
+                className="btn btn-secondary mr-2 mt-2"
                 onClick={() => history.push(`/decks/${deckId}`)}
                 >Cancel</button>
                 <button 
-                className="btn btn-primary" 
+                className="btn btn-primary mx-2 mt-2" 
                 type="submit">
                     Submit
                 </button>

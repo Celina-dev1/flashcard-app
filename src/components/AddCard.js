@@ -1,10 +1,9 @@
 import React, {Fragment, useState, useEffect} from "react";
-import {Link, useParams, useHistory} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {createCard, readDeck} from "../utils/api/index";
 import CardForm from "./CardForm";
 
 function AddCard() {
-    const history = useHistory();
     const {deckId} = useParams();
     const [front, setFront] = useState('');
     const [back, setBack] = useState('');
@@ -38,7 +37,7 @@ function AddCard() {
             <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                    <Link className="btn btn-link" to="/">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item">
                     {currentDeck.name}

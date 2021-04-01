@@ -48,7 +48,7 @@ function EditCard() {
             <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                    <Link className="btn btn-link" to="/">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item">
                     {currentDeck.name}
