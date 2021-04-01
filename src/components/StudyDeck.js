@@ -46,7 +46,7 @@ function StudyDeck() {
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                        <Link className="btn btn-link" to="/">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item">
                         {currentDeck.name}
@@ -61,7 +61,7 @@ function StudyDeck() {
                     <h2>Study: {currentDeck.name}</h2>
                     <h3>Not enough cards.</h3>
                     <p>You need at least 3 cards to study. There are {cards.length} cards in this deck.</p>
-                    <Link to={`/decks/${deckId}/cards/new`} className="btn btn-link">+ Add Cards</Link>
+                    <Link to={`/decks/${deckId}/cards/new`} className="btn btn-primary">+ Add Cards</Link>
                 </Fragment>
             )}
             {cards.length >= 3 && (

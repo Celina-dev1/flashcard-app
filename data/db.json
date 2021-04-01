@@ -6,14 +6,9 @@
       "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
     },
     {
-      "id": 2,
-      "name": "5",
-      "description": "5"
-    },
-    {
-      "name": "hi",
-      "description": "hi",
-      "id": 3
+      "name": "React Router",
+      "description": "The de facto library for keeping React UI in sync with the URL.",
+      "id": 2
     }
   ],
   "cards": [
@@ -96,18 +91,6 @@
       "id": 20,
       "front": "3",
       "back": "3"
-    },
-    {
-      "front": "1",
-      "back": "1",
-      "deckId": 2,
-      "id": 21
-    },
-    {
-      "id": 22,
-      "front": "3",
-      "back": "3",
-      "deckId": "2"
     }
   ]
 }

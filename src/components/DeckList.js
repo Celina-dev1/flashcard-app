@@ -39,17 +39,17 @@ function DeckList() {
                         <h6>{deck.cards.length} cards</h6>
                         <p className="card-text">{deck.description}</p>
                         <button 
-                        className="btn btn-primary"
+                        className="btn btn-primary mr-2"
                         onClick={() => history.push(`/decks/${deck.id}`)}>
                             View
                         </button>
                         <button 
-                        className="btn btn-primary"
+                        className="btn btn-primary mx-2"
                         onClick={() => history.push(`/decks/${deck.id}/study`)}>
                             Study
                         </button>
                         <button 
-                        className="btn btn-danger"
+                        className="btn btn-danger mx-2"
                         onClick={() => deleteHandler(deck.id)}
                         >
                             Delete
@@ -65,7 +65,7 @@ function DeckList() {
         <main className="container">
             <div>
                 <button
-                className="btn btn-secondary"
+                className="btn btn-secondary ml-3 mb-3"
                 onClick={() => history.push("/decks/new")}>
                     + Create Deck
                 </button>

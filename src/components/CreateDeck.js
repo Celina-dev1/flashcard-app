@@ -23,7 +23,7 @@ function CreateDeck() {
             <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                    <Link className="btn btn-link" to="/">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item">
                     Create Deck
@@ -49,10 +49,10 @@ function CreateDeck() {
                 ></textarea>
                 
                 <button 
-                className="btn btn-secondary"
+                className="btn btn-secondary my-2 mr-2"
                 onClick={() => history.push("/")}>Cancel</button>
                 <button 
-                className="btn btn-primary" 
+                className="btn btn-primary my-2" 
                 type="submit">
                     Submit
                 </button>

@@ -60,10 +60,10 @@ function ViewDeck() {
                         <div className="card-body">
                             <h5 className="card-text">{card.front}</h5>
                             <p className="card-text">{card.back}</p>
-                            <Link to={`/decks/${deckId}/cards/${id}/edit`} className="btn btn-link">Edit Card</Link>
+                            <Link to={`/decks/${deckId}/cards/${id}/edit`} className="btn btn-primary mr-2">Edit Card</Link>
                             <button 
                             onClick={deleteCardHandler}
-                            className="btn btn-danger">
+                            className="btn btn-danger mx-2">
                                 Delete Card
                             </button>
                         </div>
@@ -79,7 +79,7 @@ function ViewDeck() {
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                    <Link className="btn btn-link" to="/">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item">
                    {currentDeck.name}
@@ -92,14 +92,14 @@ function ViewDeck() {
                     <div className="card-body">
                         <h4>{currentDeck.name}</h4>
                         <p className="card-text">{currentDeck.description}</p>
-                        <Link className="btn btn-link" to={`/decks/${deckId}/edit`}>Edit Deck</Link>
-                        <Link className="btn btn-link" to={`/decks/${deckId}/study`}>Study Deck</Link>
-                        <Link className="btn btn-link" to={`/decks/${deckId}/cards/new`}>+ Add Cards</Link>
-                        <button className="btn btn-danger" onClick={deleteDeckHandler}>Delete Deck</button>
+                        <Link className="btn btn-primary mr-2" to={`/decks/${deckId}/edit`}>Edit Deck</Link>
+                        <Link className="btn btn-primary mx-2" to={`/decks/${deckId}/study`}>Study Deck</Link>
+                        <Link className="btn btn-primary mx-2" to={`/decks/${deckId}/cards/new`}>+ Add Cards</Link>
+                        <button className="btn btn-danger mx-2" onClick={deleteDeckHandler}>Delete Deck</button>
                     </div>
                 </div>
             </div>
-            <h4>Cards</h4>
+            <h3 className="ml-3">Cards</h3>
             <section className="row">{listOfCards}</section>
         </main>
         </Fragment>
